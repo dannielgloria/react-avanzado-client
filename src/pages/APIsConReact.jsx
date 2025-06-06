@@ -1,4 +1,12 @@
 import React, { useEffect, useState } from "react";
+import './publicacion.css';
+import {
+    Card,
+    CardContent,
+    CardMedia,
+    Typography,
+    CardActions,
+  } from '@mui/material';
 
 /*
 export default function Demo() {
@@ -60,13 +68,18 @@ export default function ListaPublicaciones(){
     return (
         <div>
             <h2>Publicaciones</h2>
-            <ul>
+            <Card>
                 {publicaciones.map(publicacion =>(
-                    <li key={publicacion.id}>{publicacion.title}</li>
-                )
-
-                )}
-            </ul>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" >
+                            {publicacion.title}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary" >
+                            {publicacion.body}
+                        </Typography>
+                    </CardContent>
+                ))}
+            </Card>
         </div>
     );
 }
