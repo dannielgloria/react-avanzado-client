@@ -1,11 +1,12 @@
-import FormularioNuevoPost from './pages/FormularioNuevoPost';
+//import FormularioNuevoPost from './pages/FormularioNuevoPost';
+import APIsConReact from './pages/APIsConReact'
 
 function App() {
 
   return (
     <div>
       <h1>Mi Blog</h1>
-      <FormularioNuevoPost />
+      <APIsConReact />
     </div>
   )
 }
